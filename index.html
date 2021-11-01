@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css"></link>
+    <title>Password Validation | YEÇ</title>
+</head>
+<body>
+    <div class="box">
+        <form action="#">
+            <input type="password" id="myPassword">
+            <i class="far fa-eye" id="eye" onclick="showtoggle()"></i>
+        </form>
+    </div>
+    <div class="message" id="message">
+        <i class="fas fa-times" id="numberIcon"></i>
+        <p class="password-contain" id="number">Must have numbers!</p>
+
+        <i class="fas fa-times" id="charIcon"></i>
+        <p class="password-contain" id="specialCHAR">Must have a special char!</p>
+
+        <i class="fas fa-times" id="capitalIcon"></i>
+        <p class="password-contain" id="capital">A Uppercase letter!</p>
+
+        <i class="fas fa-times" id="lengthIcon"></i>
+        <p class="password-contain" id="length">Shoud be 8 characters!</p>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
